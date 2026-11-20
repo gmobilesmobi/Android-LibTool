@@ -39,7 +39,7 @@ jobs:
           cache: gradle
 
       - name: Build LibTool
-        run: gradle --no-daemon :app:assembleRelease
+        run: gradle --no-daemon :app:externalNativeBuildRelease
 
       - name: Prepare LibTool artifact
         shell: bash
